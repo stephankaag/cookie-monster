@@ -48,7 +48,7 @@ docker build -t cookiemonster .
 
 ### Run the CookieMonster Container
 
-Replace <TARGET_URL> with the desired URL:
+Replace `<TARGET_URL>` with the desired URL:
 
 ```bash
 docker run -e URL="<TARGET_URL>" cookiemonster
