@@ -36,11 +36,13 @@
 ```bash
 git clone https://github.com/stephankaag/cookie-monster.git
 cd cookie-monster
+```
 
 ### Build the Docker Image
 
 ```bash
 docker build -t cookiemonster .
+```
 
 ## 🚦 Usage
 
@@ -50,11 +52,13 @@ Replace <TARGET_URL> with the desired URL:
 
 ```bash
 docker run -e URL="<TARGET_URL>" cookiemonster
+```
 
 ### Optional: Debugging with VNC
 
 ```bash
 docker run -e URL=<TARGET_URL> -p 3000:3000 cookiemonster
+```
 
 Access the VNC server via localhost:3000 in a VNC viewer.
 
@@ -64,5 +68,6 @@ Access the VNC server via localhost:3000 in a VNC viewer.
 docker run -e URL=https://www.imdb.com -p 3000:3000 cookiemonster
 CONTAINER_ID=$(docker ps -alq)
 docker cp $CONTAINER_ID:/tmp/result.json .
+```
 
 This script runs the container, extracts the result file, and saves it to your local machine.
