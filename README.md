@@ -65,9 +65,41 @@ Access the VNC server via localhost:3000 in a VNC viewer.
 ### Example Script for Running & Extracting Results
 
 ```bash
-docker run -e URL=https://www.imdb.com -p 3000:3000 cookiemonster
+docker run -e URL=https://www.imdb.com/calendar -p 3000:3000 cookiemonster
 CONTAINER_ID=$(docker ps -alq)
 docker cp $CONTAINER_ID:/tmp/result.json .
 ```
 
 This script runs the container, extracts the result file, and saves it to your local machine.
+
+---
+
+## 🔧 Environment Variables
+- `URL`: The target URL to load and fetch cookies from.
+- `DEBUG`: (Optional) Set to 1 to enable detailed logs in the console.
+
+---
+
+## 🛡️ Disclaimer
+
+**CookieMonster** is a tool intended for ethical purposes only. Ensure you have permission to access and scrape the websites you target. The maintainers are not responsible for misuse.
+
+---
+
+## 🙌 Contributions
+
+Contributions, issues, and feature requests are welcome!
+Feel free to open an issue or create a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+## ❤️ Acknowledgments
+
+- [Playwright](https://playwright.dev) for powerful browser automation.
+- [KasmVNC Base Images from LinuxServer](https://github.com/linuxserver/docker-baseimage-kasmvnc) for a full featured web native Linux desktop experience
