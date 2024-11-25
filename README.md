@@ -34,8 +34,8 @@
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/CookieMonster.git
-cd CookieMonster
+git clone https://github.com/stephankaag/cookie-monster.git
+cd cookie-monster
 
 ### Build the Docker Image
 
