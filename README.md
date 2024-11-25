@@ -37,7 +37,7 @@
 docker pull ghcr.io/stephankaag/cookie-monster
 ```
 
-### Build the Docker Image locally
+### Or, build the Docker Image locally
 
 If you want to make local modifications to these images for development purposes or just to customize the logic:
 
