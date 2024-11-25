@@ -61,8 +61,6 @@ async function run() {
       console.warn(e);
     });
 
-    await delay(5);
-
     if (response) {
       requests.push(response.request());
     }
