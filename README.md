@@ -57,10 +57,10 @@ docker run -e URL="<TARGET_URL>" cookiemonster
 ### Optional: Debugging with VNC
 
 ```bash
-docker run -e URL=<TARGET_URL> -p 3000:3000 cookiemonster
+docker run -e URL="<TARGET_URL>" -p 3000:3000 cookiemonster
 ```
 
-Access the VNC server via localhost:3000 in a VNC viewer.
+Access the VNC server via localhost:3000 in your browser.
 
 ### Example Script for Running & Extracting Results
 
