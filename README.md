@@ -63,7 +63,7 @@ docker run -e URL="<TARGET_URL>" cookie-monster
 docker run -e URL="<TARGET_URL>" -p 3000:3000 cookie-monster
 ```
 
-Access the VNC server via localhost:3000 in your browser.
+Access the VNC server via `http://localhost:3000` in your browser.
 
 ### Example Script for Running & Extracting Results
 
