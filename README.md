@@ -102,4 +102,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ## ❤️ Acknowledgments
 
 - [Playwright](https://playwright.dev) for powerful browser automation.
-- [KasmVNC Base Images from LinuxServer](https://github.com/linuxserver/docker-baseimage-kasmvnc) for a full featured web native Linux desktop experience
+- [KasmVNC Base Images from LinuxServer](https://github.com/linuxserver/docker-baseimage-kasmvnc) for a full featured web native Linux desktop experience.
