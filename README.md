@@ -31,17 +31,20 @@
 
 - [Docker](https://www.docker.com/) (Chrome and Playwright are bundled in the image).
 
-### Clone the Repository
+### Pull the Docker Image
+
+```bash
+docker pull ghcr.io/stephankaag/cookie-monster
+```
+
+### Build the Docker Image locally
+
+If you want to make local modifications to these images for development purposes or just to customize the logic:
 
 ```bash
 git clone https://github.com/stephankaag/cookie-monster.git
 cd cookie-monster
-```
-
-### Build the Docker Image
-
-```bash
-docker build -t cookiemonster .
+docker build -t cookie-monster .
 ```
 
 ## 🚦 Usage
@@ -51,13 +54,13 @@ docker build -t cookiemonster .
 Replace `<TARGET_URL>` with the desired URL:
 
 ```bash
-docker run -e URL="<TARGET_URL>" cookiemonster
+docker run -e URL="<TARGET_URL>" cookie-monster
 ```
 
 ### Optional: Debugging with VNC
 
 ```bash
-docker run -e URL="<TARGET_URL>" -p 3000:3000 cookiemonster
+docker run -e URL="<TARGET_URL>" -p 3000:3000 cookie-monster
 ```
 
 Access the VNC server via localhost:3000 in your browser.
@@ -65,7 +68,7 @@ Access the VNC server via localhost:3000 in your browser.
 ### Example Script for Running & Extracting Results
 
 ```bash
-docker run -e URL=https://www.imdb.com/calendar -p 3000:3000 cookiemonster
+docker run -e URL=https://www.imdb.com/calendar -p 3000:3000 cookie-monster
 CONTAINER_ID=$(docker ps -alq)
 docker cp $CONTAINER_ID:/tmp/result.json .
 ```
