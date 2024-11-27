@@ -31,6 +31,8 @@ RUN \
 # add local files
 COPY /root /
 
+RUN cd /script && npm ci
+
 # ports and volumes
 EXPOSE 3000
 
